@@ -1,6 +1,9 @@
 from collections import deque
 import copy
 
+# Esse Algoritmo implementa uma busca em largura sem nenhuma heurística, ou seja, é um algoritmo de busca cega. 
+# É aplicada a busca em largura no famoso jogo quebra cabeça 8-Puzzle. Nesse algoritmo podemos escolher o estado inicial das peças em um discionário de 3 vetores e o final ao qual desejamos.
+
 # Função para encontrar posição do zero
 def initial_number(state):
     for i in range(3):
@@ -27,9 +30,9 @@ def get_neighbors(state):
 # Função para checar se é o estado desejado
 def is_goal(state):
     goal = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 0]
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8]
     ]
     return state == goal
 
