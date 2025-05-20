@@ -1,5 +1,5 @@
 
-#Frunção gradiente com os seguintes parâmetros: A derivada da função expecífica (x - 3)^2 + 4, o ponto de início de x, a taxa de aprendizado(saltos para avançar e se aproximar do ponto mínimo) e a quantidade de iterações 
+#Função gradiente com os seguintes parâmetros: A derivada da função específica (x - 3)^2 + 4, o ponto de início de x, a taxa de aprendizado(saltos para avançar e se aproximar do ponto mínimo) e a quantidade de iterações 
 def gradient_descent(derivative_func, start, learning_rate, n_iterations):
     x = start  # Ponto inicial
     for i in range(n_iterations):
